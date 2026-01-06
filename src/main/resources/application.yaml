@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: users-amangement-api
+  jackson:
+    date-format: "dd-MM-yyyy HH:mm:ss:SSSS"
+    time-zone: "Indian/Antananarivo"
+    default-property-incluson: non_null
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+
+server:
+  port: 7020
+  servlet:
+    context-path: /api
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
+    request-display-duration: true
+    try-it-out-enabled: true
+    filter: true
+    urls:
+      - url: /v3/api-docs
+        name: Users API Technical Test
+  show-actuator: false
