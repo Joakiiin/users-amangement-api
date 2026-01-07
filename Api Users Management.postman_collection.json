@@ -1,0 +1,507 @@
+{
+	"info": {
+		"_postman_id": "59768ca9-9920-4980-b2ea-441fc217dc81",
+		"name": "Api Users Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27108076"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "get User By Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "e5c4f3bd-bd94-ea8f-eea2-b280d5a358f2",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "delete User",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "e5c4f3bd-bd94-ea8f-eea2-b280d5a358f2",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						},
+						{
+							"name": "update User",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"string\",\n  \"name\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"taxId\": \"string\",\n  \"addresses\": [\n    {\n      \"id\": 3108,\n      \"name\": \"string\",\n      \"street\": \"string\",\n      \"countryCode\": \"string\"\n    },\n    {\n      \"id\": 3030,\n      \"name\": \"string\",\n      \"street\": \"string\",\n      \"countryCode\": \"string\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "e5c4f3bd-bd94-ea8f-eea2-b280d5a358f2",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"email\": \"string\",\n  \"name\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"taxId\": \"string\",\n  \"addresses\": [\n    {\n      \"id\": 3108,\n      \"name\": \"string\",\n      \"street\": \"string\",\n      \"countryCode\": \"string\"\n    },\n    {\n      \"id\": 3030,\n      \"name\": \"string\",\n      \"street\": \"string\",\n      \"countryCode\": \"string\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users?filter=string&sortedBy=string",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "string"
+								},
+								{
+									"key": "sortedBy",
+									"value": "string"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users?filter=string&sortedBy=string",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": "string"
+										},
+										{
+											"key": "sortedBy",
+											"value": "string"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				},
+				{
+					"name": "create User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"string\",\n  \"name\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"taxId\": \"string\",\n  \"addresses\": [\n    {\n      \"id\": 3108,\n      \"name\": \"string\",\n      \"street\": \"string\",\n      \"countryCode\": \"string\"\n    },\n    {\n      \"id\": 3030,\n      \"name\": \"string\",\n      \"street\": \"string\",\n      \"countryCode\": \"string\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"string\",\n  \"name\": \"string\",\n  \"password\": \"string\",\n  \"phone\": \"string\",\n  \"taxId\": \"string\",\n  \"addresses\": [\n    {\n      \"id\": 3108,\n      \"name\": \"string\",\n      \"street\": \"string\",\n      \"countryCode\": \"string\"\n    },\n    {\n      \"id\": 3030,\n      \"name\": \"string\",\n      \"street\": \"string\",\n      \"countryCode\": \"string\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"password\": \"string\",\n  \"taxId\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"password\": \"string\",\n  \"taxId\": \"string\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:7020/api"
+		}
+	]
+}
